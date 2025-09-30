@@ -30,7 +30,7 @@ int main()
 				break;
 			}
 
-			NPOT = NPOT * 2;
+			NPOT = NPOT << 1;
 		}
 	}
 
