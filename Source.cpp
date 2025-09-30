@@ -3,9 +3,16 @@
 
 using namespace std;
 
+int Multply(int A, int B)
+{
+	return A * B;
+}
+
 
 int main()
 {
+
+
 	int N = 0;
 	unsigned long long X = 0;
 	unsigned long long Result = 0;
