@@ -1,9 +1,10 @@
 #include <iostream>
 #include <bitset>
 
+//2d Rendering 엔진 , 애니메이션까지 FBX
 using namespace std;
 
-int Multply(int A, int B)
+long Multply(int A, int B)
 {
 	return A * B;
 }
@@ -11,8 +12,6 @@ int Multply(int A, int B)
 
 int main()
 {
-
-
 	int N = 0;
 	unsigned long long X = 0;
 	unsigned long long Result = 0;
