@@ -6,8 +6,35 @@ using namespace std;
 
 int main()
 {
-	unsigned char Number = 0b00000001;
-	Number = Number << 1;
+	int N = 0;
+	unsigned long long X = 0;
+	unsigned long long Result = 0;
+
+	cin >> N;
+	for (int i = 0; i < N; ++i)
+	{
+		cin >> X;
+		unsigned long long NPOT = 2;
+		for (int j = 1; j < 64; ++j)
+		{
+			if (NPOT >= X)
+			{
+				if (i == 0)
+				{
+					Result = NPOT;
+				}
+				else
+				{
+					Result = Result ^ NPOT;
+				}
+				break;
+			}
+
+			NPOT = NPOT * 2;
+		}
+	}
+
+	cout << Result << endl;
 
 	return 0;
 }
